@@ -21,7 +21,7 @@ def now_serving(katz_deli)
 else
   katz_deli.each.first do |name|
     puts "Currently serving #{name}."
-
+    katz_deli.delete_at(0)
   end
 end
 
